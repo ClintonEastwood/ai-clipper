@@ -132,4 +132,4 @@ Model weights and fonts keep their own licenses.
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Made by Hernawan Alifian.
+MIT, see [LICENSE](LICENSE).
