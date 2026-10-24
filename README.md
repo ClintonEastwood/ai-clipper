@@ -52,7 +52,7 @@ The test is small; read it as on par, not better.
 ## Install
 
 ```bash
-git clone https://github.com/ClintonEastwood/ai-clipper.git
+git clone https://github.com/Rembr4nt/ai-clipper.git
 cd ai-clipper
 python -m venv .venv --system-site-packages   # keeps a preinstalled CUDA PyTorch visible
 source .venv/bin/activate                      # Windows: .venv\Scripts\activate
