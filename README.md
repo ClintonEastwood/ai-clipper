@@ -25,10 +25,22 @@ Finished steps are skipped on a rerun, so an interrupted run resumes where it st
 
 ## Result
 
-In a blind test against OpusClip, 3 independent viewers compared the top 10 clips of each tool
-on 2 Indonesian podcasts (20 pairs each, both sides cut from the same video and rendered the same
-way, sides shuffled): **27 votes for AI Clipper, 27 for OpusClip, 6 ties**. The test is small;
-read it as on par, not better.
+A blind test against OpusClip on 2 Indonesian podcasts (46 and 41 min), judged by 3 independent
+viewers, 20 clip pairs each:
+
+| | AI Clipper | OpusClip | Tie |
+|---|---|---|---|
+| Podcast 1 | 13 | 15 | 2 |
+| Podcast 2 | 14 | 12 | 4 |
+| **Total (60 votes)** | **27** | **27** | **6** |
+
+- Rank against rank: each tool's #1 clip against the other's #1, down to #10.
+- Viewers did not know which tool made which clip, and the A/B side was random per pair.
+- Both clips in a pair were cut from the same video and rendered by the same plain FFmpeg
+  command (no captions or titles), so only the choice of moment was compared.
+- The pass rule was fixed before voting: AI Clipper gets at least as many votes as OpusClip.
+
+The test is small; read it as on par, not better.
 
 ## Requirements
 
