@@ -1,0 +1,26 @@
+# AI Clipper Requirements
+# Install the CUDA build of torch/torchvision/torchaudio first (pytorch.org), then:
+#   pip install -r requirements.txt
+# Tested: torch 2.8.0+cu128, qwen-asr 0.0.6, numpy 2.3.5, scenedetect 0.6.7.1
+
+# ASR: transcribe.py, add_subtitles.py (pulls transformers, accelerate, librosa)
+torch>=2.0.0
+qwen-asr==0.0.6
+numpy
+
+# Pipeline
+PyYAML>=6.0
+requests>=2.28.0
+tqdm>=4.65.0
+Pillow  # add_badge.py
+
+# Auto-reframe: TalkNet-ASD (cloned by scripts/setup_talknet.py)
+gdown>=4.6
+torchvision
+torchaudio
+scipy
+scikit-learn
+pandas
+opencv-python
+python_speech_features
+scenedetect<0.7  # 0.7 removed VideoManager, which TalkNet imports

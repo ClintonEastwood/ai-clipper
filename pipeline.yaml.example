@@ -1,0 +1,38 @@
+# AI Clipper Pipeline Configuration
+# Usage: python scripts/run_pipeline.py --config pipeline.yaml
+
+input: input/video.mp4
+output_dir: output/
+topics: [controversial, funny, motivational]
+
+# Analysis settings
+cloud: false
+# model: cogito-2.1:671b
+# api_key: your-api-key
+language: Indonesian
+
+# Video settings
+vertical_mode: auto  # TalkNet follows the speaker (CUDA GPU); pad = whole frame on a blurred background
+pad_blur: true  # only for pad mode
+# crop_position: center  # only for crop mode
+# codec: libx264
+
+# Captions and hook title
+# skip_subtitles: true
+badge_duration: 4.5  # seconds the hook title stays on screen
+
+# Audio chunking
+chunk_length: 30
+overlap: 0
+
+# Analysis thresholds
+min_confidence: 0.67
+strategy: story  # keep the analyzer's stories as cut (smart: merge + pad short picks)
+
+# Post-merge optimizer (combine adjacent clips with small gaps)
+# optimizer: true
+# optimizer_max_gap: 5.0  # seconds - clips within this gap get merged into one
+
+# Clip duration limits (seconds)
+# min_duration: 30
+# max_duration: 60
