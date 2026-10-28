@@ -25,8 +25,8 @@ Finished steps are skipped on a rerun, so an interrupted run resumes where it st
 
 ## Result
 
-A blind test against OpusClip on 2 Indonesian podcasts (46 and 41 min), judged by 3 independent
-viewers, 20 clip pairs each:
+A blind test against OpusClip on 2 Indonesian podcasts (46 and 41 min), judged by 3 friends, each
+voting separately and blind, 20 clip pairs each:
 
 | | AI Clipper | OpusClip | Tie |
 |---|---|---|---|
